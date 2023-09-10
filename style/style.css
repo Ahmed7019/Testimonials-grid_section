@@ -66,6 +66,19 @@ main > article {
 .verified {
   opacity: 50%;
 }
+
+.verified-circle {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 3.5px solid var(--Moderate-violet);
+}
+.verified-circle-light {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 3.5px solid var(--White);
+}
 /* Names dc,jw,kw,jh,pa */
 
 .dc {
@@ -124,10 +137,11 @@ main > article {
 }
 
 .photo {
-  margin-right: 30px;
+  margin-right: 2rem;
   border-radius: 50%;
 }
 
 .photo img {
+  width: 3rem;
   border-radius: 50%;
 }
