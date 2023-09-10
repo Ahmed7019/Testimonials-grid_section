@@ -22,7 +22,7 @@ body {
   font-family: Barlow;
   src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
 }
-.parent {
+main {
   position: relative;
   display: grid;
   display: -ms-grid;
@@ -30,15 +30,28 @@ body {
   width: 100%;
   height: 100vh;
   background-color: red;
-  grid-template-columns: repeat(3,auto );
+  grid-template-columns: repeat(4,1fr );
   grid-template-rows: repeat(2,auto 1fr);
-  grid-template-areas:
-    "dc dc jw kw"
-    "jh pa pa kw";
-  gap: 25px 25px;
+  gap: 1.5rem ;
 }
 
-.parent > div {
+.grid-row-span-2 {
+  grid-row: span 2;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.quote-pic {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 10rem;
+  position: relative;
+}
+
+main > article {
   position: relative;
   padding: 30px;
   border-radius: 20px;
@@ -56,7 +69,6 @@ body {
 /* Names dc,jw,kw,jh,pa */
 
 .dc {
-  grid-area: dc;
   background-color: var(--Moderate-violet);
   color: var(--White);
 }
@@ -64,25 +76,25 @@ body {
   border: 2px solid var(--Moderate-violet);
 }
 .jw {
-  grid-area: jw;
+  /* grid-area: jw; */
   background-color: var(--Very-dark-grayish-blue);
   color: var(--White);
 }
 
 .kw {
-  grid-area: kw;
+  /* grid-area: kw; */
   background-color: var(--White);
   color: var(--Very-dark-grayish-blue);
 }
 
 .jh {
-  grid-area: jh;
+  /* grid-area: jh; */
   background-color: var(--Light-grayish-blue);
   color: var(--Very-dark-grayish-blue);
 }
 
 .pa {
-  grid-area: pa;
+  /* grid-area: pa; */
   background-color: var(--Very-dark-blackish-blue);
   color: var(--White);
 }
