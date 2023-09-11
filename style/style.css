@@ -30,9 +30,9 @@ main {
   width: 100%;
   height: fit-content;
   background-color: red;
-  grid-template-columns: repeat(4,1fr );
-  grid-template-rows: repeat(2,auto 1fr);
-  gap: 1.5rem ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .grid-row-span-2 {
@@ -46,7 +46,7 @@ main {
 .quote-pic {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: top ;
+  background-position: top;
   background-position-x: 25rem;
   background-size: 10rem;
   position: relative;
@@ -132,6 +132,7 @@ main > article {
 .user :nth-child(1) {
   font-weight: bold;
 }
+
 .photo {
   margin-right: 2rem;
   border-radius: 50%;
