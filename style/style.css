@@ -29,7 +29,6 @@ main {
   display: -moz-grid;
   width: 100%;
   height: fit-content;
-  background-color: red;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
@@ -93,11 +92,13 @@ main > article {
 .kw {
   background-color: var(--White);
   color: var(--Very-dark-grayish-blue);
+  box-shadow: 12px 10px 20px -10px black;
 }
 
 .jh {
   background-color: var(--Light-grayish-blue);
   color: var(--Very-dark-grayish-blue);
+  box-shadow: 12px 10px 20px -15px black;
 }
 
 .pa {
@@ -124,7 +125,7 @@ main > article {
 .user {
   text-transform: capitalize;
   position: relative;
-  top: .2rem;
+  top: 0.2rem;
 }
 
 .user :nth-child(1) {
@@ -132,7 +133,7 @@ main > article {
 }
 .user :nth-child(2) {
   position: relative;
-  bottom: .8rem;
+  bottom: 0.8rem;
 }
 
 .photo {
