@@ -28,7 +28,7 @@ main {
   display: -ms-grid;
   display: -moz-grid;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: red;
   grid-template-columns: repeat(4,1fr );
   grid-template-rows: repeat(2,auto 1fr);
@@ -46,14 +46,15 @@ main {
 .quote-pic {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: top ;
+  background-position-x: 25rem;
   background-size: 10rem;
   position: relative;
 }
 
 main > article {
   position: relative;
-  padding: 30px;
+  padding: 1.5rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -68,16 +69,14 @@ main > article {
 }
 
 .verified-circle {
-  border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  border: 3.5px solid var(--Moderate-violet);
+  border: 3px solid var(--Moderate-violet);
 }
 .verified-circle-light {
-  border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  border: 3.5px solid var(--White);
+  border: 3px solid var(--White);
 }
 /* Names dc,jw,kw,jh,pa */
 
@@ -85,29 +84,23 @@ main > article {
   background-color: var(--Moderate-violet);
   color: var(--White);
 }
-.dc .photo img {
-  border: 2px solid var(--Moderate-violet);
-}
+
 .jw {
-  /* grid-area: jw; */
   background-color: var(--Very-dark-grayish-blue);
   color: var(--White);
 }
 
 .kw {
-  /* grid-area: kw; */
   background-color: var(--White);
   color: var(--Very-dark-grayish-blue);
 }
 
 .jh {
-  /* grid-area: jh; */
   background-color: var(--Light-grayish-blue);
   color: var(--Very-dark-grayish-blue);
 }
 
 .pa {
-  /* grid-area: pa; */
   background-color: var(--Very-dark-blackish-blue);
   color: var(--White);
 }
