@@ -16,6 +16,9 @@
 body {
   background-color: var(--Light-gray);
   font-family: Barlow;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 @font-face {
@@ -23,12 +26,10 @@ body {
   src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
 }
 main {
-  position: relative;
   display: grid;
   display: -ms-grid;
   display: -moz-grid;
-  width: 100%;
-  height: fit-content;
+  width: 90%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
@@ -46,21 +47,20 @@ main {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top;
-  background-position-x: 25rem;
-  background-size: 10rem;
+  background-position-x: 22rem;
+  background-size: 8rem;
   position: relative;
 }
 
 main > article {
   position: relative;
   padding: 1.5rem;
-  border-radius: 20px;
+  border-radius: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   letter-spacing: 1px;
-  /* height: 60vh; */
 }
 
 .verified {
@@ -72,10 +72,21 @@ main > article {
   height: 3rem;
   border: 3px solid var(--Moderate-violet);
 }
+
 .verified-circle-light {
+  position: relative;
+}
+
+.verified-circle-light::before {
+  content: "";
+  position: absolute;
+  left: -2.5px;
+  top: -0.2rem;
+  border-radius: 50%;
   width: 3rem;
   height: 3rem;
   border: 3px solid var(--White);
+  opacity: 0.5;
 }
 /* Names dc,jw,kw,jh,pa */
 
@@ -92,13 +103,13 @@ main > article {
 .kw {
   background-color: var(--White);
   color: var(--Very-dark-grayish-blue);
-  box-shadow: 12px 10px 20px -10px black;
+  box-shadow: 12px 10px 20px -20px black;
 }
 
 .jh {
   background-color: var(--Light-grayish-blue);
   color: var(--Very-dark-grayish-blue);
-  box-shadow: 12px 10px 20px -15px black;
+  box-shadow: 12px 10px 20px -20px black;
 }
 
 .pa {
