@@ -129,6 +129,9 @@ main > article {
   flex-direction: column;
 }
 
+.user :nth-child(1) {
+  font-weight: bold;
+}
 .photo {
   margin-right: 2rem;
   border-radius: 50%;
