@@ -124,10 +124,15 @@ main > article {
 .user {
   text-transform: capitalize;
   position: relative;
+  top: .2rem;
 }
 
 .user :nth-child(1) {
   font-weight: bold;
+}
+.user :nth-child(2) {
+  position: relative;
+  bottom: .8rem;
 }
 
 .photo {
