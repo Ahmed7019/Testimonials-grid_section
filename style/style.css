@@ -43,19 +43,22 @@ main {
   grid-column: span 2;
 }
 
+p {
+  text-align: left;
+}
+
 .quote-pic {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top;
-  background-position-x: 22rem;
+  background-position-x: 85%;
   background-size: 8rem;
-  position: relative;
 }
 
 main > article {
   position: relative;
   padding: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -156,4 +159,33 @@ main > article {
 .photo img {
   width: 3rem;
   border-radius: 50%;
+}
+
+/* Mobile design */
+
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 1;
+  }
+
+  .jh {
+    grid-row-start: 3;
+  }
+
+  .pa {
+    grid-row-start: 4;
+  }
+
+  .kw {
+    grid-row: span 2;
+  }
+
+  .quote-pic {
+    background-size: 5rem;
+  }
 }
